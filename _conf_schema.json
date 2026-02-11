@@ -1,0 +1,73 @@
+{
+    "base_url": {
+        "description": "API 基础地址",
+        "type": "string",
+        "default": "https://co2.de5.net"
+    },
+    "api_key": {
+        "description": "API Key",
+        "type": "string",
+        "default": "xingshuo"
+    },
+    "default_speaker": {
+        "description": "默认声线 ID",
+        "type": "int",
+        "default": 22,
+        "hint": "俊达萌低语(22)"
+    },
+    "speedScale": {
+        "description": "语速",
+        "type": "float",
+        "slider": {
+            "min": 0.1,
+            "max": 2.0,
+            "step": 0.1
+        },
+        "default": 1.2
+    },
+    "pitchScale": {
+        "description": "音高",
+        "type": "float",
+        "slider": {
+            "min": -0.15,
+            "max": 0.15,
+            "step": 0.01
+        },
+        "default": 0.0
+    },
+    "intonationScale": {
+        "description": "语调起伏",
+        "type": "float",
+        "slider": {
+            "min": 0.1,
+            "max": 2.0,
+            "step": 0.1
+        },
+        "default": 1.1
+    },
+    "volumeScale": {
+        "description": "音量",
+        "type": "float",
+        "slider": {
+            "min": 0.1,
+            "max": 2.0,
+            "step": 0.1
+        },
+        "default": 1.0
+    },
+    "bgmEnabled": {
+        "description": "启用默认 BGM",
+        "type": "bool",
+        "default": false
+    },
+    "bgmVolume": {
+        "description": "BGM 音量",
+        "type": "float",
+        "slider": {
+            "min": 0,
+            "max": 1,
+            "step": 0.05
+        },
+        "default": 0.35
+    }
+}

@@ -1,0 +1,12 @@
+name: astrbot_plugin_voicevox_xingshuo
+display_name: 星烁语音合成 (Voicevox)
+desc: 星烁语音 (Voicevox) 终极全功能拦截版
+help: |
+  使用方法：
+  /vox<N>config - 配置预设参数
+  /vox<N> <文本> - 使用预设合成语音
+  /vox_list - 获取声线列表
+  /vox_help - 详细 Markdown 使用手册
+version: v1.1.4
+author: Gemini
+repo: ""
