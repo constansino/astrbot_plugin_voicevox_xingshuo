@@ -131,7 +131,7 @@ class VoicevoxPlugin(Star):
         headers = {"X-API-Key": self.api_key, "Content-Type": "application/json"}
         try:
             async with httpx.AsyncClient() as client:
-                resp = await client.post(f"{self.base_url}/tts", json=payload, headers=headers, timeout=60)
+                resp = await client.post(f"{self.base_url}/tts", json=payload, headers=headers, timeout=300)
                 if resp.status_code == 200:
                     fpath = os.path.join(self.data_dir, f"tts_{uuid.uuid4()}.wav")
                     with open(fpath, "wb") as f: f.write(resp.content)
